@@ -1,0 +1,176 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+nav{
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: orange;
+}
+
+.container{
+    padding: 30px;
+}
+
+h1{
+    color: #333;
+}
+
+h2{
+    color: #444;
+}
+
+ul{
+    list-style-type: square;
+}
+
+button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+input,
+textarea{
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+textarea{
+    height: 100px;
+}
+
+.project-card{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px gray;
+}
+
+.project-card:hover{
+    transform: scale(1.03);
+}
+
+.skill-card{
+    background-color: white;
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px gray;
+}
+
+.skill-card:hover{
+    background-color: #007bff;
+    color: white;
+}
+
+.profile-pic{
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.container{
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.project-card,
+.skill-card,
+button{
+    transition: 0.3s;
+}
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a{
+        margin: 10px 0;
+    }
+
+    input,
+    textarea{
+        width: 90%;
+    }
+
+    .profile-pic{
+        width: 150px;
+    }
+
+    .skill-card{
+        display: block;
+    }
+
+}
+
+.dark{
+    background-color: #121212;
+    color: white;
+}
+
+.dark h1,
+.dark h2,
+.dark p{
+    color: white;
+}
+
+.dark .project-card,
+.dark .skill-card{
+    background-color: #333;
+}
+
+h1,
+h2{
+    text-align: center;
+}
+
+.button-center{
+    text-align: center;
+    margin: 20px 0;
+}

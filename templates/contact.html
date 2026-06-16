@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <h1>Contact Me</h1>
+
+        <form method="POST">
+
+            <label>Username</label><br>
+            <input type="text" name="username"><br><br>
+
+            <label>Email</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Message</label><br>
+            <textarea name="message"></textarea><br><br>
+
+            <button type="submit">Send</button>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <p>© 2026 My Portfolio Website</p>
+    </footer>
+
+</body>
+</html>

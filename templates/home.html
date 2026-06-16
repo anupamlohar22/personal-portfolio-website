@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<script>
+
+function darkMode(){
+    document.body.classList.toggle("dark");
+}
+
+</script>
+
+
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <div class="button-center">
+    <button onclick="darkMode()">Dark Mode</button>
+</div>
+
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+<img src="{{ url_for('static', filename='images/profile.jpg') }}"
+     alt="Profile Picture"
+     class="profile-pic">
+     <br><br>
+
+<div class="button-center">
+
+    <a href="{{ url_for('static', filename='files/resume.pdf') }}" download>
+        <button>Download Resume</button>
+    </a>
+
+</div>
+</a>
+        <h2>Anupam</h2>
+
+        <p>
+            I am a Data Science student learning Python,
+            Machine Learning and Flask.
+        </p>
+
+        <h2>Skills</h2>
+
+<div class="skill-card">Python</div>
+<div class="skill-card">Flask</div>
+<div class="skill-card">HTML</div>
+<div class="skill-card">CSS</div>
+<div class="skill-card">Machine Learning</div>
+    </div>
+
+    <footer>
+        <p>© 2026 My Portfolio Website</p>
+    </footer>
+
+</body>
+</html>
